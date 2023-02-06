@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "platform-in-a-box-tf-state"
+    bucket = "hello-mattx-tf-state"
     key    = "hello-matt/terraform.tfstate"
     region = "ap-southeast-2"
   }
