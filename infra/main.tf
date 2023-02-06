@@ -95,3 +95,7 @@ resource "aws_lambda_permission" "apigw" {
 
 data "aws_region" "here" {}
 data "aws_caller_identity" "me" {}
+
+output "service_url" {
+  value  = aws_apigatewayv2_stage.live.invoke_url
+}
