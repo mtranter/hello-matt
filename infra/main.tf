@@ -18,7 +18,7 @@ module "api_function" {
   name         = "hello-mattAPI"
   service_name = "hello-mattAPI"
   runtime      = "nodejs18.x"
-  handler      = "api-handler.handler"
+  handler      = "index.handler"
   filename     = data.archive_file.source.output_path
   timeout      = 300
   create_dlq = false
